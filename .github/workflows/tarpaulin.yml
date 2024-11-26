@@ -25,7 +25,7 @@ jobs:
         run: cargo tarpaulin --out Html || true
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: tarpaulin-coverage
           path: target/cov/html
